@@ -111,6 +111,136 @@ body {
     line-height: 1.6;
 }
 
+/* Add a scroll-down link style */
+.scroll-down {
+    display: inline-block;
+    margin-top: 40px;
+    color: #FFC907; /* Charity: Water yellow */
+    font-size: 2em;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.scroll-down:hover {
+    color: #2E9DF7; /* Charity: Water blue */
+}
+
+/* Gallery section styles */
+.gallery-section {
+    background: #f7fafc; /* Very light background for contrast */
+    color: #003566;      /* Dark blue text for readability */
+    padding: 60px 20px 60px 20px;
+    text-align: center;
+}
+
+/* Top images in the gallery, side by side */
+.gallery-top-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+/* Gallery images style for top images (left side) */
+.gallery-img {
+    width: 140px;           /* Make left images smaller */
+    max-width: 40vw;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    background: #fff;
+    object-fit: cover;
+}
+
+/* Full-width image for WaterGirls.png (left side, below paragraph) */
+.gallery-img-full {
+    width: 180px;           /* Make this image smaller too */
+    max-width: 50vw;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    background: #fff;
+    object-fit: contain;
+    margin-top: 20px;
+}
+
+/* Gallery section uses flex to split into two sides */
+.gallery-flex {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+/* Left side of the gallery */
+.gallery-left {
+    flex: 1;
+    min-width: 300px;
+    background: #fff7e1;      /* Add the same light background color */
+    color: #003566;           /* Ensure text is readable */
+    border-radius: 10px;      /* Match the right side */
+    padding: 30px 20px;       /* Add some padding */
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08); /* Optional: subtle shadow */
+    margin-top: 30px;         /* Match the right side */
+}
+
+/* Right side of the gallery */
+.gallery-right {
+    flex: 1;
+    min-width: 250px;
+    background: #fff7e1;
+    color: #003566;
+    border-radius: 12px;
+    padding: 30px 20px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+/* Donate button in the gallery right */
+.gallery-right .donate-btn {
+    margin-top: 30px;
+    background-color: #003566;
+    color: #fff7e1;
+    font-size: 1.1em;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.gallery-right .donate-btn:hover {
+    background-color: #2E9DF7;
+    color: #fff;
+}
+
+/* Large image for DirtyWater.png on the right side */
+.dirty-water-img {
+    width: 95%;             /* Make right image much larger */
+    max-width: 400px;
+    min-width: 200px;
+    margin-top: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    display: block;
+}
+
+/* Responsive: stack images on small screens */
+@media (max-width: 900px) {
+    .gallery-flex {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .gallery-top-images {
+        flex-direction: column;
+        align-items: center;
+    }
+    .gallery-img,
+    .gallery-img-full,
+    .dirty-water-img {
+        width: 90vw;
+        max-width: 90vw;
+    }
+}
+
 /* Responsive: stack on small screens */
 @media (max-width: 768px) {
     .container {

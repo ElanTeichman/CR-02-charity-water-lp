@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Main container for the landing page -->
+    <!-- Main container for the landing page (first view) -->
     <div class="container">
         <!-- Left side with background image and fade effect -->
         <div class="left">
@@ -25,8 +25,48 @@
             <div class="headline">Any Donation. Real Change.</div>
             <!-- Subtext explaining the mission -->
             <div class="subtext">
-                100% of your gift goes straight to clean water projects and you’ll see exactly where it goes.
+                100% of your gift goes straight to clean water projects and you’ll see exactly where it goes.<br /><br />
                 Giving back has never been this clear, easy, or powerful.
+            </div>
+            <!-- Down arrow to scroll to next section -->
+            <a href="#gallery" class="scroll-down">&#8595; See More</a>
+        </div>
+    </div>
+
+    <!-- Secondary view: Gallery section -->
+    <div class="gallery-section" id="gallery">
+        <div class="gallery-flex">
+            <!-- Left side: images and impact text -->
+            <div class="gallery-left">
+                <!-- Header for the gallery section -->
+                <h2>Any Donation.</h2>
+                <!-- Two images above the text -->
+                <div class="gallery-top-images">
+                    <img src="DrinkingWater.png" alt="Child drinking clean water" class="gallery-img">
+                    <img src="WaterGirlsBack.png" alt="Girls walking with water containers" class="gallery-img">
+                </div>
+                <!-- Section headline and paragraph -->
+                <h3>See the Impact</h3>
+                <p class="gallery-text">
+                    Your support brings clean water to communities around the world. A gift of ten dollars can make a difference in the fight for accessible clean drinking water. Charity : Water is an industry leader in transparency, so you can see how your donation is put to work.
+                </p>
+                <!-- WaterGirls.png below the paragraph -->
+                <div class="gallery-bottom-image">
+                    <img src="WaterGirls.png" alt="Girls carrying water" class="gallery-img-full">
+                </div>
+            </div>
+            <!-- Right side: donate button, header, and paragraph -->
+            <div class="gallery-right">
+                <!-- Space for a header -->
+                <h2>Real Change.</h2>
+                <!-- Space for a paragraph -->
+                <p class="donate-text">
+                    More than 1.42 billion people, including 450 million children, live in areas with high or extremely high water vulnerability. Your donation can help change that. Join us in making a difference today.
+                </p>
+                <!-- Donate button -->
+                <button class="donate-btn">Donate</button>
+                <!-- Large DirtyWater.png image below the button -->
+                <img src="DirtyWater.png" alt="Dirty water example" class="dirty-water-img">
             </div>
         </div>
     </div>
